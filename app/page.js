@@ -1,8 +1,11 @@
+import Hero from "@/components/Hero";
 
 export default async function Page() {
   return (
     <>
-        <div className="">Homepage baby...</div>
+      <div className="">
+        <Hero />
+      </div>
     </>
   );
 }

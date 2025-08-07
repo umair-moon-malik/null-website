@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import Navbar from "@/components/Navbar";
-import LightRays from "@/components/ui/LightRays/LightRays";
+import Background from "@/components/Background";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "null | VIT Bhopal",
@@ -22,26 +23,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`antialiased bg-neutral-900 text-gray-100 `}>
-        <div style={{ width: "100%", height: "100vh", position: "fixed" }}>
-          <LightRays
-            raysOrigin="top-center"
-            raysColor="#b3b3b3"
-            raysSpeed={1}
-            lightSpread={0.8}
-            rayLength={3}
-            fadeDistance={2}
-            followMouse={true}
-            mouseInfluence={0.1}
-            noiseAmount={0.1}
-            distortion={0.05}
-            saturation={1}
-            className=""
-          />
-        </div>
+        <Background />
         <Navbar />
-        <main className="max-h-[90vh] max-w-screen relative sm:top-[90px] top-20">
+        <main className=" max-w-screen relative sm:top-[90px] top-20 min-h-screen">
           {children}
         </main>
+        <Footer/>
       </body>
     </html>
   );
