@@ -35,13 +35,13 @@ const Footer = () => {
                 <FaGlobe size={24} />
               </Link>
               <Link
-                href="https://in.linkedin.com/company/nullvitb"
+                href="https://www.linkedin.com/company/null-vit-bhopal-student-chapter/"
                 className="hover:text-blue-500"
               >
                 <FaLinkedin size={24} />
               </Link>
               <Link
-                href="https://www.instagram.com/null_vitb_student_chapter/"
+                href="https://www.instagram.com/null.vitb/"
                 className="hover:text-pink-700"
               >
                 <FaInstagram size={24} />
@@ -79,20 +79,7 @@ const Footer = () => {
             </Link>{" "}
             | null - The Open Security Community
           </p>
-          <div className="mt-2">
-            <Link
-              href="/PrivacyPolicy"
-              className="text-sm text-white/80 mx-2 hover:text-blue-500"
-            >
-              Privacy Policy
-            </Link>
-            <Link
-              href="/TermsOfService"
-              className="text-sm text-white/80 mx-2 hover:text-blue-500"
-            >
-              Terms of Service
-            </Link>
-          </div>
+          
         </div>
       </div>
     </footer>

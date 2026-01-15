@@ -3,8 +3,7 @@ import Link from "next/link";
 export default function Navbar() {
   const navItems = [
     { href: "/", label: "Home" },
-    { href: "/about", label: "About" },
-    { href: "/events", label: "Events" },
+    // { href: "/events", label: "Events" },
     { href: "/team", label: "Team" },
     { href: "/contact", label: "Contact" },
   ];
@@ -34,7 +33,7 @@ export default function Navbar() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-white/80 hover:text-white transition-all duration-300 hover:scale-105 font-medium"
+                className="text-white/80 hover:text-white transition-all duration-300 font-black"
               >
                 {item.label}
               </Link>
